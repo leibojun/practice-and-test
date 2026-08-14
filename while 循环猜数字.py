@@ -7,6 +7,7 @@ while flag:
     guess=int(input("请输入猜测数字："))
     if num==guess:
         print("correct！")
+        flag=False
     else:
         if num<guess:
             print("too big")

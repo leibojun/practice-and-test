@@ -7,3 +7,12 @@ while i<=10:# 外层循环1
         j+=1
     print("小美我喜欢你")
     i+=1
+# 输出99乘法表
+k=1
+while k<=9:
+    l=1
+    while l<=k:
+        print(f"{l}*{k}={k*l} ",end='')# end表示不自动换行
+        l+=1
+    print('')# 换行
+    k+=1

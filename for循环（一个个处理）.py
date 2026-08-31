@@ -2,7 +2,7 @@
 name="battlefield"# 定义了一个字符串
 count=0
 for x in name:# 遍历字符串
-    print(f"{x} ",end='')# 把每个字符单独输
+    print(f"{x} ",end='')# 把每个字符单独输 end=''表示不自动换行
     if(x=="e"):
         count+=1
 print(f'\ncount={count}')# 统计了字符e的数量
@@ -22,3 +22,4 @@ for x in range(1,100):
     if(x%2==0):
         oushu+=1
 print(f"偶数个数为{oushu}")
+

@@ -1,7 +1,7 @@
 money=5000000
 name=None#定义全局变量
 name=input("请输入您的姓名")
-def query(show_header):#存款阶段不显示标头
+def query(show_header):#存款阶段不显示标头，此时show_header为布尔类型变量
     if show_header:
         print("----------查询余额-----------")
     print(f"{name}您好，您的余额剩余{money}元")

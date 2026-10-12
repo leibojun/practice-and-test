@@ -8,4 +8,4 @@ print(f"字符串{str}中有{num}个it字符")
 newstr=str.replace(" ","|")
 print(newstr)
 strlist=newstr.split("|")
-print(f"字符串被分割后得到的列表是{strlist}")
+print(f"字符串被分割后得到的列表是{strlist}")#返回值为列表

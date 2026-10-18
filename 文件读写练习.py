@@ -4,7 +4,7 @@ fr=open("D:\账单数据.txt","r",encoding="utf-8")
 fw=open("D:/ bill.txt","w",encoding="utf-8")#创建新文件
 for line in fr:
     line=line.strip()#取消空格和换行符
-    if line.split(",")[4]=="测试":
+    if line.split(",")[4]=="测试":#注意这个用法，spilt分割后的到一个列表，可用下表寻值
         continue
     fw.write(line)
     fw.write("\n")#手动换行

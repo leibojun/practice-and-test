@@ -1,3 +1,4 @@
+import time
 #UTF-8通用编码
 #文件操作，打开，读写，关闭
 #打开文件open函数open(name,mode->文件操作读写或新建,encoding->编码格式)
@@ -17,4 +18,17 @@ f.close()#关闭文件,解除文件占用
 #with open（） as 语句
 with open(r'C:\Users\34395\Desktop\poem_test.txt', 'r', encoding='utf-8') as f:
     for line in f:print(f'每一行的内容是：{line}')#执行完自动close文件避免遗忘
+#文件写入 写入缓冲区，调用flush操作后存入硬盘
+f=open("D:/test.txt","w",encoding='utf-8')#若文档不存在，会创建一个文件
+f.write("hello world")
+f.flush()#将缓冲区中的内容写入硬盘  刷新
+f.write("kale")
+f.flush()
+f.close()
+f=open("D:/test.txt","a",encoding='utf-8')
+f.write("\nnew line")#追加的内容
+f.flush()
+f.close()
+f=open("D:/test.txt","r",encoding='utf-8')
+print(f.read())
 

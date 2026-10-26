@@ -11,4 +11,4 @@ line.set_global_opts(
     toolbox_opts=ToolboxOpts(is_show=True),
     visualmap_opts=VisualMapOpts(is_show=True),
 )
-line.render()#生成为html网页
+line.render()#生成为html网页·

@@ -8,5 +8,6 @@ class Phone:
     def call_by_5G(self):
         self.__check_5G()
         print("正在通话中")
-phone1 = Phone()
+phone1 = Phone()#构建类对象
 phone1.call_by_5G()
+#私有变量或者方法前面加两条下划线__即可
